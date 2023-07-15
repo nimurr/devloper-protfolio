@@ -12,6 +12,9 @@ body {
     max-width: 1140px;
     margin:50px auto;
     background: rgb(228, 228, 228);
+    /* background-image: url('../images/body1.jpg'); */
+    background-repeat: no-repeat; 
+    height: 100vh;
 }
 
 .btn{
@@ -123,7 +126,7 @@ body {
 /* end top sections  ============================= */
 
 .projects {
-    grid-column: span 2;
+    grid-column: span 3;
     color: #686868;
     background: #fff;
     width: 100%;
@@ -234,10 +237,19 @@ body {
 }
 
 /* end of hobbies  ========================== */
-
+.blog-title{
+    grid-column:span 3;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    color: #686868;
+}
 .blogs{
     grid-column:span 3;
+    display: flex; 
+    gap: 20px;
 }
+
 .blogs h2{
     background: #fff;
     color: #686868;
@@ -246,10 +258,12 @@ body {
     margin-bottom: 10px;
 }
 .blog-item img{
-    width: 450px;
+    width: 100%;
+    height: 250px;
 }
 .blog-item{
     display: flex;
+    flex-direction: column;
     gap: 50px;
     background: #fff;
     padding: 30px;

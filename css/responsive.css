@@ -1,55 +1,73 @@
-
-
 @media screen and (max-width:1000px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .banner {
         grid-column: span 1;
     }
-    .blog-item{
-        flex-direction: column-reverse;
-    }
-    .blog-item img{
+
+    
+
+    .blog-item img {
         width: 95%;
         text-align: center;
         height: 300px;
     }
-    .blogs{
-        grid-column:span 2;
+
+    .blogs {
+        grid-column: span 2;
     }
 }
 
 @media screen and (max-width:700px) {
     .container {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
-    .parsone{
-        grid-row:span 1;
-        grid-column:span 2;
-    } 
-    .banner {
-        grid-column: span 2;
-    }
-    .front-end , .design{
+
+    .parsone {
         grid-row: span 1;
         grid-column: span 2;
     }
-    .project-items img{
+
+    .banner {
+        grid-column: span 2;
+    }
+
+    .front-end,
+    .design {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    .project-items img {
         width: 100%;
         height: auto;
     }
-    .experiences{
+
+    .experiences {
         grid-column: span 2;
-    } 
-    .hobbies{
+    }
+
+    .hobbies {
         width: 100%;
         grid-column: span 2;
     }
-    .project-items{
+
+    .project-items {
         flex-direction: column;
     }
-.parsone a{
-    font-size: 14px;
-}
+
+    .parsone a {
+        font-size: 14px;
+    }
+
+    .blogs {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .blog-item img{
+        width: 100%;
+        height: 200px;
+    }
 }
