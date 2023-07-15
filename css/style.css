@@ -255,3 +255,19 @@ body {
     margin: 15px 0;
     line-height: 1.5;
 }
+
+/* fixed-social-icon */
+
+.fixed-social-icon{
+    position: fixed;
+    width: 80px;
+    text-align: center;
+    background: #fff;
+    top: 25%;
+    right: 0;
+    border-radius: 5px;
+}
+.fixed-social-icon img{
+    width: 80%;
+    margin:10px 0;
+}
