@@ -4,6 +4,9 @@
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .banner {
+        grid-column: span 1;
+    }
     .blog-item{
         flex-direction: column-reverse;
     }
@@ -25,6 +28,9 @@
         grid-row:span 1;
         grid-column:span 2;
     } 
+    .banner {
+        grid-column: span 2;
+    }
     .front-end , .design{
         grid-row: span 1;
         grid-column: span 2;

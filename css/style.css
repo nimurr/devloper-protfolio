@@ -69,6 +69,15 @@ body {
     margin-right: 10px;
 }
 
+/* banner  -----------------*/
+.banner {
+    grid-column: span 2;
+}
+.banner img{
+    width: 100%;
+    border-radius: 10px;
+}
+
 /* front end ------------------------------------------ */
 
 .front-end , .design{
@@ -262,7 +271,9 @@ body {
     position: fixed;
     width: 80px;
     text-align: center;
-    background: #fff;
+    background: #ffffff30;
+    backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
     top: 10vh;
     right: 0;
     border-radius: 5px;
