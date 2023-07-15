@@ -43,4 +43,7 @@
     .project-items{
         flex-direction: column;
     }
+.parsone a{
+    font-size: 14px;
+}
 }
