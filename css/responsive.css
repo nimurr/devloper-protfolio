@@ -1,0 +1,46 @@
+
+
+@media screen and (max-width:1000px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog-item{
+        flex-direction: column-reverse;
+    }
+    .blog-item img{
+        width: 95%;
+        text-align: center;
+        height: 300px;
+    }
+    .blogs{
+        grid-column:span 2;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        grid-template-columns: 1fr ;
+    }
+    .parsone{
+        grid-row:span 1;
+        grid-column:span 2;
+    } 
+    .front-end , .design{
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+    .project-items img{
+        width: 100%;
+        height: auto;
+    }
+    .experiences{
+        grid-column: span 2;
+    } 
+    .hobbies{
+        width: 100%;
+        grid-column: span 2;
+    }
+    .project-items{
+        flex-direction: column;
+    }
+}

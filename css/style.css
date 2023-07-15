@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    max-width: 1140px;
+    margin:50px auto;
+    background: rgb(228, 228, 228);
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #fff;
+    background: #2f80ed;
+    font-weight: 700;
+    border: none;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+
+/* parsone ------------------------------------------- */
+.parsone {
+    grid-row: span 4;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+        border-radius: 10px;
+}
+
+.parsone img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.parsone h2{
+    color: #848484;
+}
+.parsone p{
+    color: #848484;
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+.parsone a{
+    display: block;
+    line-height: 2;
+    color: #848484;
+    font-weight: bold;
+}
+.parsone a i{
+    margin-right: 10px;
+}
+
+/* front end ------------------------------------------ */
+
+.front-end , .design{
+    grid-row: span 2;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+        border-radius: 10px;
+}
+.front-end h2 ,.design h2{
+    color: #848484;
+}
+.front-end-text label{
+    display: block;
+    margin-bottom: 11px;
+    color: #686868;
+}
+.frontend-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.front-end-proggress{
+    margin-top: 10px;
+}
+.frontend-container .front-end-proggress meter , progress{
+    width: 180px; 
+    height: 10px;
+    margin-bottom: 20px;
+    background: rgb(206, 206, 206);
+    border: none;
+    border-radius: 5px;
+}
+
+
+.design{
+    grid-row: span 1;
+}
+
+
+/* end top sections  ============================= */
+
+.projects {
+    grid-column: span 2;
+    color: #686868;
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.projects-container{
+    grid-row: span 8;
+    grid-column: span 2;
+}
+.project-items{
+    background: #fff;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.project-items img{
+    width:250px;
+    height: 200px;
+}
+.project-items span{
+    font-weight: 700;
+    color: #848484;
+}
+.project-items h2{
+    margin: 12px 0; 
+    color: #686868;
+}
+.project-items p{
+    color: #848484;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* end of project section ================================= */
+.experiences{
+    grid-row:span 4;
+    grid-column: span 1;
+} 
+.experiences h2{
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #686868;
+
+}
+.experiences-item {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.experiences-item img{
+    width: 50px;
+    height: 40px;
+    margin-right: 15px;
+}
+.experiences-item span{
+    color: #848484;
+}
+.experiences-item h3{
+    margin: 10px 0;
+    color: #686868;
+}
+.experiences-item p{
+    text-align: justify;
+    color: #848484;
+    line-height: 1.3;
+}
+
+/* end of experiences  ========================== */
+
+.hobbies {
+    grid-column: span 1;
+}
+.hobbies h2{
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #686868;
+}
+
+.hobbies-item img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.hobbies-item{
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+} 
+.hobbies-item h3{
+    color: #686868;
+}
+.hobbies-item p{
+    color: #848484;
+    margin-top: 10px;
+}
+
+/* end of hobbies  ========================== */
+
+.blogs{
+    grid-column:span 3;
+}
+.blogs h2{
+    background: #fff;
+    color: #686868;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.blog-item img{
+    width: 450px;
+}
+.blog-item{
+    display: flex;
+    gap: 50px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.blog-item h3{
+    color: #686868;
+}
+.blog-item p{
+    color: #848484;
+    margin: 15px 0;
+    line-height: 1.5;
+}
