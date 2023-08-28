@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev.Nimur</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
-<body>
+<body class="h-full">
     <main class="container">
 
         <div class="parsone">
@@ -29,9 +32,37 @@
 
         <div class="banner">
             <img src="images/banner1.png" alt="">
-            <a href="images/CV.pdf" download="">
-                <button class="btn">Download My CV</button>
-            </a>
+            <div class="md:flex gap-2">
+                <br>
+                <a href="images/CV.pdf" download="">
+                    <button class="btn">Download My CV</button>
+                </a>
+                <br>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn mt-2" onclick="my_modal_5.showModal()">Contact Me</button>
+                <div class="bg-slate-400">
+                    <dialog id="my_modal_5" class="modal bg-slate-500 sm:modal-middle ">
+                        <form class="bg-slate-400" action="https://formsubmit.co/755742c42b18ad7e0331e1448c4e7fd7" method="POST">
+                            <fieldset>
+                                <legend>Name</legend>
+                                <input type="text" id="name" name="Name" required>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Email </legend>
+                                <input type="email" id="email" name="Email" required>
+                            </fieldset>
+                            <fieldset>
+                                <legend>text </legend>
+                                <textarea name="Message" id="message" cols="30" rows="5" required></textarea>
+                            </fieldset>
+        
+                            <div class="submit">
+                                <button class="SubmitBtn" type="submit">Submit Now</button>
+                            </div>
+                        </form>
+                </dialog>
+                </div>
+            </div>
         </div>
 
         <div class="front-end">
@@ -45,11 +76,11 @@
                     <label for="disk_e">Node js </label>
                 </div>
                 <div class="front-end-proggress">
-                    <progress  value="100" max="110"></progress><br>
-                    <progress  value="100" max="107"></progress><br>
-                    <progress  value="100" max="125"></progress><br>
-                    <progress  value="100" max="132"></progress> <br>
-                    <progress  value="100" max="180"></progress>
+                    <progress value="100" max="110"></progress><br>
+                    <progress value="100" max="107"></progress><br>
+                    <progress value="100" max="125"></progress><br>
+                    <progress value="100" max="132"></progress> <br>
+                    <progress value="100" max="180"></progress>
                 </div>
             </div>
         </div>
@@ -62,15 +93,15 @@
                     <label for="disk_b">Photoshop</label>
                 </div>
                 <div class="front-end-proggress">
-                    <progress  value="100" max="140"></progress><br>
-                    <progress  value="100" max="187"></progress>
+                    <progress value="100" max="140"></progress><br>
+                    <progress value="100" max="187"></progress>
                 </div>
             </div>
         </div>
         <br>
 
-        <div class="projects">
-            <h3>Projects (6)</h3>
+        <div class="projects ">
+            <h3 class="text-2xl ">Projects (6)</h3>
         </div>
 
         <div class="projects-container">
@@ -79,7 +110,8 @@
                 <div class="project-text">
                     <span>#HTML #CSS #responsive</span>
                     <h2>Blog Website</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis beatae consequuntur harum debitis recusandae. Placeat modi vitae unde esse nam.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis beatae consequuntur harum
+                        debitis recusandae. Placeat modi vitae unde esse nam.</p>
                     <button class="btn">Live</button>
                 </div>
             </div>
@@ -88,7 +120,8 @@
                 <div class="project-text">
                     <span>#HTML #CSS #responsive</span>
                     <h2>Blog Website</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis beatae consequuntur harum debitis recusandae. Placeat modi vitae unde esse nam.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis beatae consequuntur harum
+                        debitis recusandae. Placeat modi vitae unde esse nam.</p>
                     <button class="btn">Live</button>
                 </div>
             </div>
@@ -97,7 +130,8 @@
                 <div class="project-text">
                     <span>#HTML #CSS #responsive</span>
                     <h2>Blog Website</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis beatae consequuntur harum debitis recusandae. Placeat modi vitae unde esse nam.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis beatae consequuntur harum
+                        debitis recusandae. Placeat modi vitae unde esse nam.</p>
                     <button class="btn">Live</button>
                 </div>
             </div>
@@ -106,7 +140,8 @@
                 <div class="project-text">
                     <span>#HTML #CSS #responsive</span>
                     <h2>Blog Website</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis beatae consequuntur harum debitis recusandae. Placeat modi vitae unde esse nam.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis beatae consequuntur harum
+                        debitis recusandae. Placeat modi vitae unde esse nam.</p>
                     <button class="btn">Live</button>
                 </div>
             </div>
@@ -115,7 +150,8 @@
                 <div class="project-text">
                     <span>#HTML #CSS #responsive</span>
                     <h2>Blog Website</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis beatae consequuntur harum debitis recusandae. Placeat modi vitae unde esse nam.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis beatae consequuntur harum
+                        debitis recusandae. Placeat modi vitae unde esse nam.</p>
                     <button class="btn">Live</button>
                 </div>
             </div>
@@ -124,7 +160,8 @@
                 <div class="project-text">
                     <span>#HTML #CSS #responsive</span>
                     <h2>Blog Website</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis beatae consequuntur harum debitis recusandae. Placeat modi vitae unde esse nam.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis beatae consequuntur harum
+                        debitis recusandae. Placeat modi vitae unde esse nam.</p>
                     <button class="btn">Live</button>
                 </div>
             </div>
@@ -138,7 +175,8 @@
                     <div>
                         <span>Feb 2023 Current </span>
                         <h3>Front-end Developer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis necessitatibus laborum ea optio rerum aspernatur.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis necessitatibus laborum ea
+                            optio rerum aspernatur.</p>
                     </div>
                 </div>
                 <div class="experiences-item">
@@ -146,7 +184,8 @@
                     <div>
                         <span>Feb 2023 Current </span>
                         <h3>Front-end Developer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis necessitatibus laborum ea optio rerum aspernatur.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis necessitatibus laborum ea
+                            optio rerum aspernatur.</p>
                     </div>
                 </div>
                 <div class="experiences-item">
@@ -154,7 +193,8 @@
                     <div>
                         <span>Feb 2023 Current </span>
                         <h3>Front-end Developer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis necessitatibus laborum ea optio rerum aspernatur.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis necessitatibus laborum ea
+                            optio rerum aspernatur.</p>
                     </div>
                 </div>
             </div>
@@ -174,7 +214,7 @@
                 <p>It's my second popular hobbies in my life .</p>
             </div>
         </div>
-        
+
 
         <div class="blog-title">
             <h2>My Blogs</h2>
@@ -186,7 +226,11 @@
                 <img src="images/Frontend-Development.jpg" alt="">
                 <div>
                     <h3>Frontend Development</h3>
-                    <p>Frontend development plays a crucial role in creating intuitive and visually appealing user interfaces for websites and applications. As technology continues to evolve, frontend developers need to stay up to date with the latest tools, frameworks, and best practices to deliver exceptional user experiences. In this article, we'll explore the key aspects of frontend development and provide insights into how you can enhance your skills in this dynamic field.</p>
+                    <p>Frontend development plays a crucial role in creating intuitive and visually appealing user
+                        interfaces for websites and applications. As technology continues to evolve, frontend developers
+                        need to stay up to date with the latest tools, frameworks, and best practices to deliver
+                        exceptional user experiences. In this article, we'll explore the key aspects of frontend
+                        development and provide insights into how you can enhance your skills in this dynamic field.</p>
                     <button class="btn">More</button>
                 </div>
             </div>
@@ -194,7 +238,11 @@
                 <img src="images/websitedesign.avif" alt="">
                 <div>
                     <h3>Frontend Development</h3>
-                    <p>Frontend development plays a crucial role in creating intuitive and visually appealing user interfaces for websites and applications. As technology continues to evolve, frontend developers need to stay up to date with the latest tools, frameworks, and best practices to deliver exceptional user experiences. In this article, we'll explore the key aspects of frontend development and provide insights into how you can enhance your skills in this dynamic field.</p>
+                    <p>Frontend development plays a crucial role in creating intuitive and visually appealing user
+                        interfaces for websites and applications. As technology continues to evolve, frontend developers
+                        need to stay up to date with the latest tools, frameworks, and best practices to deliver
+                        exceptional user experiences. In this article, we'll explore the key aspects of frontend
+                        development and provide insights into how you can enhance your skills in this dynamic field.</p>
                     <button class="btn">More</button>
                 </div>
             </div>
@@ -214,7 +262,7 @@
         <a href="https://twitter.com/Nimur404" target="_blank">
             <img src="images/icons/twitter.png" alt="">
         </a>
-        
+
     </div>
 
 </body>

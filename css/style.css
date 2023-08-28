@@ -11,7 +11,7 @@
 body {
     max-width: 1140px;
     margin:50px auto;
-    background: rgb(228, 228, 228);
+    /* background: rgb(228, 228, 228); */
     /* background-image: url('../images/body1.jpg'); */
     background-repeat: no-repeat; 
     height: 100vh;
@@ -37,8 +37,26 @@ body {
     gap: 30px;
 }
 
-
-
+#my_modal_5{
+    background: #52a5e5d1;
+    width: 30%;
+    margin: auto;
+    height: 500px;
+    border-radius: 10px;
+    color: #fff;
+}
+#my_modal_5 input , #my_modal_5 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #000;
+}
+#my_modal_5 button{
+    background: #000;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
 /* parsone ------------------------------------------- */
 .parsone {
     grid-row: span 4;
@@ -128,10 +146,13 @@ body {
 .projects {
     grid-column: span 3;
     color: #686868;
-    background: #fff;
+    background: #eee;
     width: 100%;
     padding: 20px;
     border-radius: 10px;
+}
+.projects h2{
+    font-size: 30px;
 }
 
 
@@ -140,7 +161,7 @@ body {
     grid-column: span 2;
 }
 .project-items{
-    background: #fff;
+    background: #eee;
     display: flex;
     padding: 20px;
     gap: 20px;
@@ -171,7 +192,7 @@ body {
     grid-column: span 1;
 } 
 .experiences h2{
-    background: #fff;
+    background: #eee;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -179,7 +200,7 @@ body {
 
 }
 .experiences-item {
-    background: #fff;
+    background: #eee;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -210,7 +231,7 @@ body {
     grid-column: span 1;
 }
 .hobbies h2{
-    background: #fff;
+    background: #eee;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -223,7 +244,7 @@ body {
     margin-bottom: 15px;
 }
 .hobbies-item{
-    background: #fff;
+    background: #eee;
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 20px;
@@ -239,7 +260,7 @@ body {
 /* end of hobbies  ========================== */
 .blog-title{
     grid-column:span 3;
-    background: #fff;
+    background: #eee;
     padding: 15px;
     border-radius: 10px;
     color: #686868;
@@ -251,7 +272,7 @@ body {
 }
 
 .blogs h2{
-    background: #fff;
+    background: #eee;
     color: #686868;
     padding: 20px 30px;
     border-radius: 10px;
@@ -265,7 +286,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    background: #fff;
+    background: #eee;
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 10px;
